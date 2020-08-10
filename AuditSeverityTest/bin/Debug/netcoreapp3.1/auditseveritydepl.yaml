@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auditseveritydepl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: AuditSeverityService
+  template:
+    metadata:
+      labels:
+        app: AuditSeverityService
+    spec:
+      containers:
+      - name: auditseverityservice
+        image: auditprojectcr.azurecr.io/auditseverity865800repo:latest
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: auditseveritysn
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: auditseverityservice
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: AuditSeverityService
