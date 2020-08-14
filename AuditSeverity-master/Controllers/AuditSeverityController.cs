@@ -25,7 +25,7 @@ namespace AuditSeverityService.Controllers
         }
 
         [HttpPost]
-        [Authorize]
+        //[Authorize]
         public async Task<ActionResult<AuditResponse>> ProjectExecutionStatus([FromBody] AuditRequest AuditRequest)
         {
             if (AuditRequest.ProjectName == null || AuditRequest.ProjectManagerName == null || AuditRequest.AuditDetails.AuditType == null || AuditRequest.ApplicationOwnerName == null || AuditRequest.AuditDetails.AuditDate == null || AuditRequest.AuditDetails.AuditQuestions == null)
