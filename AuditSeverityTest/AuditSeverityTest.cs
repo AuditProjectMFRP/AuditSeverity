@@ -19,7 +19,6 @@ namespace AuditSeverityTest
         public void Setup()
         {
         }
-        
         [Test]
         public void CheckAuditResponseObject_WhenAuditTypeIsInternal()
         {
@@ -41,6 +40,8 @@ namespace AuditSeverityTest
             obj.ApplicationOwnerName = "cts";
 
             Mock<IConfiguration> config = new Mock<IConfiguration>();
+            config.SetupGet(x => x["Links:AuditBenchmark"]).Returns("https://localhost:44315/api/AuditBenchmark");
+
             //Act
             AuditSeverityController Controller = new AuditSeverityController(config.Object);
             var auditResponse = Controller.ProjectExecutionStatus(obj);
@@ -74,6 +75,7 @@ namespace AuditSeverityTest
             obj.ProjectName = "audit";
             obj.ApplicationOwnerName = "cts";
             Mock<IConfiguration> config = new Mock<IConfiguration>();
+            config.SetupGet(x => x["Links:AuditBenchmark"]).Returns("https://localhost:44315/api/AuditBenchmark");
 
             //Act
             AuditSeverityController Controller = new AuditSeverityController(config.Object);
@@ -87,7 +89,7 @@ namespace AuditSeverityTest
             Assert.AreEqual("Action to be taken in 1 week", d.RemedialActionDuration);
         }
 
-    
+
         [Test]
         public void GetAuditCheckListQuestions_WhenInvalidInputIsPassed_ReturnsBadRequest()
         {
@@ -128,11 +130,10 @@ namespace AuditSeverityTest
             AuditSeverityController Controller = new AuditSeverityController(config.Object);
             var ControllerOutput = Controller.ProjectExecutionStatus(obj);
             var result = ControllerOutput.Result;
-            var a=result.Result as BadRequestObjectResult;
+            var a = result.Result as BadRequestObjectResult;
 
             Assert.AreEqual("Please Enter All the Values", a.Value);
         }
-
 
     }
 }

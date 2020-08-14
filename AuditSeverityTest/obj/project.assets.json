@@ -8116,11 +8116,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rahul\\Desktop\\audit try\\AuditSeverity\\AuditSeverityTest\\AuditSeverityTest.csproj",
+      "projectUniqueName": "C:\\Users\\Rahul\\Desktop\\gitpush\\AuditSeverity\\AuditSeverityTest\\AuditSeverityTest.csproj",
       "projectName": "AuditSeverityTest",
-      "projectPath": "C:\\Users\\Rahul\\Desktop\\audit try\\AuditSeverity\\AuditSeverityTest\\AuditSeverityTest.csproj",
+      "projectPath": "C:\\Users\\Rahul\\Desktop\\gitpush\\AuditSeverity\\AuditSeverityTest\\AuditSeverityTest.csproj",
       "packagesPath": "C:\\Users\\Rahul\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rahul\\Desktop\\audit try\\AuditSeverity\\AuditSeverityTest\\obj\\",
+      "outputPath": "C:\\Users\\Rahul\\Desktop\\gitpush\\AuditSeverity\\AuditSeverityTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rahul\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8136,8 +8136,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Rahul\\Desktop\\audit try\\AuditSeverity\\AuditSeverity-master\\AuditSeverityService.csproj": {
-              "projectPath": "C:\\Users\\Rahul\\Desktop\\audit try\\AuditSeverity\\AuditSeverity-master\\AuditSeverityService.csproj"
+            "C:\\Users\\Rahul\\Desktop\\gitpush\\AuditSeverity\\AuditSeverity-master\\AuditSeverityService.csproj": {
+              "projectPath": "C:\\Users\\Rahul\\Desktop\\gitpush\\AuditSeverity\\AuditSeverity-master\\AuditSeverityService.csproj"
             }
           }
         }

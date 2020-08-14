@@ -5250,11 +5250,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rahul\\Desktop\\audit try\\AuditSeverity\\AuditSeverity-master\\AuditSeverityService.csproj",
+      "projectUniqueName": "C:\\Users\\Rahul\\Desktop\\gitpush\\AuditSeverity\\AuditSeverity-master\\AuditSeverityService.csproj",
       "projectName": "AuditSeverityService",
-      "projectPath": "C:\\Users\\Rahul\\Desktop\\audit try\\AuditSeverity\\AuditSeverity-master\\AuditSeverityService.csproj",
+      "projectPath": "C:\\Users\\Rahul\\Desktop\\gitpush\\AuditSeverity\\AuditSeverity-master\\AuditSeverityService.csproj",
       "packagesPath": "C:\\Users\\Rahul\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rahul\\Desktop\\audit try\\AuditSeverity\\AuditSeverity-master\\obj\\",
+      "outputPath": "C:\\Users\\Rahul\\Desktop\\gitpush\\AuditSeverity\\AuditSeverity-master\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rahul\\AppData\\Roaming\\NuGet\\NuGet.Config",
